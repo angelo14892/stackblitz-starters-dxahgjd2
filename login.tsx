@@ -19,9 +19,7 @@ export default function Login() {
 
   return (
     <>
-      <Head>
-        <title>Iniciar Sesión - EventHub</title>
-      </Head>
+      <Head><title>Iniciar Sesión - EventHub</title></Head>
       <Container size="sm" style={{ paddingTop: 40 }}>
         <Paper p="xl" radius="md" shadow="sm">
           <Title order={2}>Iniciar Sesión</Title>
@@ -45,13 +43,14 @@ export default function Login() {
           />
           <PasswordInput label="Contraseña" placeholder="••••••" mt="sm" />
 
-          <Button fullWidth mt="xl" onClick={handle}>
-            Entrar
-          </Button>
+          <Button fullWidth mt="xl" onClick={handle}>Entrar</Button>
 
           <Text size="sm" mt="md">
             ¿No tienes cuenta?{' '}
-            <Link href="/register" style={{ color: '#1c7ed6', textDecoration: 'none' }}>
+            <Link
+              href="/register"
+              style={{ color: '#1c7ed6', textDecoration: 'none' }}
+            >
               Regístrate
             </Link>
           </Text>
@@ -60,3 +59,4 @@ export default function Login() {
     </>
   );
 }
+
