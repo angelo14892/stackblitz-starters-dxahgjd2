@@ -19,7 +19,9 @@ export default function Register() {
 
   return (
     <>
-      <Head><title>Registro - EventHub</title></Head>
+      <Head>
+        <title>Registro - EventHub</title>
+      </Head>
       <Container size="sm" style={{ paddingTop: 40 }}>
         <Paper p="xl" radius="md" shadow="sm">
           <Title order={2}>Crear cuenta</Title>
@@ -46,6 +48,7 @@ export default function Register() {
           <Button fullWidth mt="xl" onClick={handle}>
             Registrarme
           </Button>
+
           <Text size="sm" mt="md">
             ¿Ya tienes cuenta?{' '}
             <Link href="/login" style={{ color: '#1c7ed6', textDecoration: 'none' }}>
